@@ -3,6 +3,10 @@ let colorBoxes = document.querySelectorAll(".color-box");
 
 let nameInput = document.getElementById("name-input");
 
+nameInput.addEventListener("input", () => {
+  nameInput.value = nameInput.value.replace(/[^a-zA-Z\s]/g, "");
+});
+
 
 let alertp = document.getElementById("alert-p");
 
