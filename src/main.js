@@ -71,7 +71,7 @@ themeToggle.addEventListener("click", () => {
     document.body.classList.remove("bg-black");
     document.body.classList.add("bg-gray-100");
 
-    themeToggle.innerHTML = `<img src="src/mode-dark.svg" class="w-8" alt="dark">`;
+    themeToggle.innerHTML = `<img src="/icons/mode-dark.svg" class="w-8" alt="dark">`;
     themeToggle.classList.remove("bg-white");
     themeToggle.classList.add("bg-black");
 
@@ -79,7 +79,7 @@ themeToggle.addEventListener("click", () => {
     document.body.classList.add("bg-black");
     document.body.classList.remove("bg-gray-100");
 
-    themeToggle.innerHTML = `<img src="src/mode-light.svg" class="w-8" alt="light">`;
+    themeToggle.innerHTML = `<img src="/icons/mode-light.svg" class="w-8" alt="light">`;
     themeToggle.classList.remove("bg-black");
     themeToggle.classList.add("bg-white");
   }
