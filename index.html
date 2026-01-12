@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dynamic User Manager</title>
-  </head>
-  <body class="bg-linear-to-r from-[#d9e6f2] to-[#bbcce9]">
-    <nav class="bg-[#ffffff] flex justify-end p-5 border-b border-b-gray-500 rounded shadow">
-      <ul
-        class="flex justify-evenly gap-x-7 pr-15 text-2xl font-bold text-gray-700"
-        id="navigation"
-      >
-        <li><a href="#home" class="nav-a text-gray-700 transition-colors duration-200">Home</a></li>
-<li><a href="#about" class="nav-a text-gray-700 transition-colors duration-200">About</a></li>
-<li><a href="#services" class="nav-a text-gray-700 transition-colors duration-200">Services</a></li>
-<li><a href="#products" class="nav-a text-gray-700 transition-colors duration-200">Products</a></li>
-<li><a href="#contact" class="nav-a text-gray-700 transition-colors duration-200">Contact</a></li>
 
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <!-- <main>
-      <div id="home">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greeter</title>
+</head>
 
-        HOME
+<body class="bg-black">
+
+  <main class="h-screen flex items-center justify-center">
+    <section class="mt-6 flex flex-col items-center justify-center gap-y-4">
+      <button id="theme-toggle" class="fixed top-6 right-10 p-2 rounded-full bg-white cursor-pointer transition-all">
+        <img src="src/mode-light.svg" class="w-8" alt="theme">
+      </button>
+
+      <div id="bodycol" class="
+    w-[90%] p-6 gap-y-4
+    sm:w-[80%] sm:p-10 sm:gap-y-6
+    lg:w-xl lg:p-20 lg:gap-y-8
+    bg-gray-700 shadow-2xl rounded-lg 
+    flex flex-col justify-center items-center
+  ">
+
+        <h1 class="font-bold text-3xl text-white">What's Your Name?</h1>
+        <input class="outline outline-gray-600/80 rounded p-1 py-2 w-full bg-gray-200 text-black pl-2 capitalize"
+          placeholder="Enter Your Name" type="text" name="" id="name-input">
+        <p class="text-red-500 bg-gray-600 hidden" id="alert-p"></p>
+        <button
+          class="bg-[#3dd87d] text-white p-2 px-4 w-full font-semibold rounded-full cursor-pointer hover:bg-[#0aa73c]"
+          id="enter-button">Enter</button>
+        <h2 id="greet-text" class="text-center text-2xl text-white transition-all  font-semibold capitalize hidden">
+        </h2>
+        <!-- <div class="flex gap-x-3 items-center justify-center">
+          <div class="w-4 h-4 bg-blue-400 color-box border border-white/70 rounded-sm" data-color="bg-blue-400"></div>
+          <div class="w-4 h-4 bg-orange-400 color-box border border-white/70 rounded-sm" data-color="bg-orange-400">
+          </div>
+          <div class="w-4 h-4 bg-red-400 color-box border border-white/70 rounded-sm" data-color="bg-red-400"></div>
+          <div class="w-4 h-4 bg-violet-400 color-box border border-white/70 rounded-sm" data-color="bg-violet-400">
+          </div>
+          <div class="w-4 h-4 bg-indigo-400 color-box border border-white/70 rounded-sm" data-color="bg-indigo-400">
+          </div>
+          <div class="w-4 h-4 bg-yellow-400 color-box border border-white/70 rounded-sm" data-color="bg-yellow-400">
+          </div>
+        </div> -->
+
 
       </div>
-    </main> -->
+
+      </div>
+    </section>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
-  </body>
+</body>
+
 </html>
