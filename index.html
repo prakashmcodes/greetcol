@@ -45,50 +45,45 @@
 </head>
 
 
-<body class="bg-black">
+<body class="bg-black" id="bodycol">
 
   <main class="h-screen flex items-center justify-center">
     <section class="mt-6 flex flex-col items-center justify-center gap-y-4">
-      <button id="theme-toggle" class="fixed top-6 right-10 p-2 rounded-full bg-white cursor-pointer transition-all">
-        <img src="/icons/mode-light.svg" class="w-8" alt="theme">
-      </button>
 
-      <div id="bodycol" class="
-    w-[90%] p-6 gap-y-4
-    sm:w-[80%] sm:p-10 sm:gap-y-6
-    lg:w-xl lg:p-20 lg:gap-y-8
-    bg-gray-700 shadow-2xl rounded-lg 
-    flex flex-col justify-center items-center
-  ">
+      <div class="card-container w-[90%] p-6 gap-y-4 sm:w-[80%] sm:p-10 sm:gap-y-6 lg:w-xl lg:p-20 lg:gap-y-8 
+        bg-gray-700 shadow-2xl rounded-lg flex flex-col justify-center items-center">
+      
+        <div id="input-section" class="w-full flex flex-col gap-y-4">
+          <h1 class="font-bold text-3xl text-white text-center">What's Your Name?</h1>
+          <input class="outline outline-gray-600/80 rounded p-1 py-2 w-full bg-gray-200 text-black pl-2 capitalize"
+            placeholder="Enter Your Name" type="text" id="name-input" />
+          <p class="text-red-500 bg-gray-600 font-medium hidden text-center p-2 rounded" id="alert-p"></p>
+          <button
+            class="bg-[#3dd87d] text-gray-800 p-2 px-4 w-full font-semibold rounded-full cursor-pointer hover:bg-[#0aa73c] transition-all"
+            id="enter-button">Enter</button>
+        </div>
 
-        <h1 class="font-bold text-3xl text-white">What's Your Name?</h1>
-        <input class="outline outline-gray-600/80 rounded p-1 py-2 w-full bg-gray-200 text-black pl-2 capitalize"
-          placeholder="Enter Your Name" type="text" name="" id="name-input">
-        <p class="text-red-500 bg-gray-600 font-medium hidden" id="alert-p"></p>
-        <button
-          class="bg-[#3dd87d] text-gray-800 p-2 px-4 w-full font-semibold rounded-full cursor-pointer hover:bg-[#0aa73c] "
-          id="enter-button">Enter</button>
-        <h2 id="greet-text" class="text-center text-2xl text-white transition-all  font-semibold capitalize hidden">
-        </h2>
-        <!-- <div class="flex gap-x-3 items-center justify-center">
-          <div class="w-4 h-4 bg-blue-400 color-box border border-white/70 rounded-sm" data-color="bg-blue-400"></div>
-          <div class="w-4 h-4 bg-orange-400 color-box border border-white/70 rounded-sm" data-color="bg-orange-400">
-          </div>
-          <div class="w-4 h-4 bg-red-400 color-box border border-white/70 rounded-sm" data-color="bg-red-400"></div>
-          <div class="w-4 h-4 bg-violet-400 color-box border border-white/70 rounded-sm" data-color="bg-violet-400">
-          </div>
-          <div class="w-4 h-4 bg-indigo-400 color-box border border-white/70 rounded-sm" data-color="bg-indigo-400">
-          </div>
-          <div class="w-4 h-4 bg-yellow-400 color-box border border-white/70 rounded-sm" data-color="bg-yellow-400">
-          </div>
-        </div> -->
+        
+        <div id="greeting-section" class="w-full hidden flex-col items-center gap-y-6">
+          <h2 id="greet-text" class="text-center text-3xl text-white font-semibold capitalize">
+          </h2>
 
+          <div class="flex gap-x-4 flex-wrap justify-center">
+            <button id="random-theme"
+              class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all hover:scale-105 flex items-center gap-2 cursor-pointer">
+              Random
+            </button>
 
-      </div>
+            <button id="reset-button"
+              class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition-all hover:scale-105 flex items-center gap-2 cursor-pointer">
+              Reset
+            </button>
+          </div>
+        </div>
 
       </div>
     </section>
-    </div>
+  </main>
 
     <script type="module" src="/src/main.js"></script>
 </body>
